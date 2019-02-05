@@ -12,6 +12,10 @@ public class MyPicture
     private Square ground;
     private Square groundtwo;
     private Triangle roof;
+    private Triangle rooftwo;
+    private Triangle roofthree;
+    private Triangle rooffour;
+    private Triangle rooffive;
     private Circle sun;
     private boolean drawn;
 
@@ -24,7 +28,11 @@ public class MyPicture
         window = new Square();
         ground = new Square();
         groundtwo = new Square();
-        roof = new Triangle();  
+        roof = new Triangle();
+        rooftwo = new Triangle();
+        roofthree = new Triangle();
+        rooffour = new Triangle();
+        rooffive = new Triangle();
         sun = new Circle();
         drawn = false;
     }
@@ -57,9 +65,33 @@ public void draw()
     
             roof.changeSize(60, 180);
             roof.moveHorizontal(20);
-            roof.moveVertical(20);
+            roof.moveVertical(60);
             roof.makeVisible();
             roof.changeColor("red");
+            
+            rooftwo.changeSize(60, 180);
+            rooftwo.moveHorizontal(80);
+            rooftwo.moveVertical(60);
+            rooftwo.makeVisible();
+            rooftwo.changeColor("red");
+            
+            roofthree.changeSize(60, 180);
+            roofthree.moveHorizontal(-40);
+            roofthree.moveVertical(60);
+            roofthree.makeVisible();
+            roofthree.changeColor("red");
+            
+            rooffour.changeSize(30, 90);
+            rooffour.moveHorizontal(-160);
+            rooffour.moveVertical(60);
+            rooffour.makeVisible();
+            rooffour.changeColor("red");
+            
+            rooffive.changeSize(30, 90);
+            rooffive.moveHorizontal(200);
+            rooffive.moveVertical(60);
+            rooffive.makeVisible();
+            rooffive.changeColor("red");
     
             sun.changeColor("yellow");
             sun.moveHorizontal(100);
